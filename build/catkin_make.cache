@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/park/rc_car/devel -DCMAKE_INSTALL_PREFIX=/home/park/rc_car/install -G Unix Makefiles
