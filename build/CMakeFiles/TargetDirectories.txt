@@ -35,3 +35,11 @@
 /home/park/rc_car/build/gtest/googlemock/gtest/CMakeFiles/list_install_components.dir
 /home/park/rc_car/build/gtest/googlemock/gtest/CMakeFiles/gtest.dir
 /home/park/rc_car/build/gtest/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/install/strip.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/install/local.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/test.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/list_install_components.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/edit_cache.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/_catkin_empty_exported_target.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/rebuild_cache.dir
+/home/park/rc_car/build/qr_code_reader/CMakeFiles/install.dir

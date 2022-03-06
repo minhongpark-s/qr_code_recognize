@@ -8,6 +8,7 @@
 
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/park/rc_car/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/park/rc_car/devel/lib:$LD_LIBRARY_PATH"
 export PWD='/home/park/rc_car/build'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/park/rc_car/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROSLISP_PACKAGE_DIRECTORIES='/home/park/rc_car/devel/share/common-lisp'
 export ROS_PACKAGE_PATH="/home/park/rc_car/src:$ROS_PACKAGE_PATH"

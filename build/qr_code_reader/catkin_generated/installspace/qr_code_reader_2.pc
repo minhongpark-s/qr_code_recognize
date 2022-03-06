@@ -1,0 +1,8 @@
+prefix=/home/park/rc_car/install
+
+Name: qr_code_reader_2
+Description: Description of qr_code_reader_2
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

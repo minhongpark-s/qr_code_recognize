@@ -4,6 +4,11 @@ from std_msgs.msg import Int32
 from std_msgs.msg import String
 import pyzbar.pyzbar as pyzbar
 import cv2
+import sys 
+reload(sys) 
+sys.setdefaultencoding('utf8')
+
+#-*- coding:utf-8 -*-
 
 cap = cv2.VideoCapture(0)
 
@@ -12,6 +17,12 @@ pub = rospy.Publisher('counter', String, queue_size=10)
 rate=rospy.Rate(2)
 
 i = 0
+
+toggle = 0
+rem = ""
+rem_ = ""
+toggle2 = 0
+
 while(cap.isOpened()):
   ret, img = cap.read()
 
@@ -32,7 +43,22 @@ while(cap.isOpened()):
 
     text = '%s (%s)' % (barcode_data, barcode_type)
     cv2.putText(img, text, (x, y), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2, cv2.LINE_AA)
-    pub.publish(barcode_data)
+
+    rem_ = rem
+    rem = barcode_data
+    if toggle2==0:
+	rem_= barcode_data
+	toggle2=1
+    if toggle==0:
+	#barcode_data = barcode_data.encode('utf-8')
+	#barcode_data = barcode_data.decode('unicode_escape')
+	print(type(barcode_data))
+    	pub.publish(barcode_data)
+	toggle=1
+
+    if rem_ != rem:
+	toggle=0
+    
 
   cv2.imshow('img', img)
 
