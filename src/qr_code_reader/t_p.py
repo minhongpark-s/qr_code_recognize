@@ -13,7 +13,7 @@ sys.setdefaultencoding('utf8')
 cap = cv2.VideoCapture(0)
 
 rospy.init_node('t_p')
-pub = rospy.Publisher('counter', String, queue_size=10)
+pub = rospy.Publisher('counter', String, queue_size=20)
 rate=rospy.Rate(2)
 
 i = 0
@@ -53,7 +53,9 @@ while(cap.isOpened()):
 	#barcode_data = barcode_data.encode('utf-8')
 	#barcode_data = barcode_data.decode('unicode_escape')
 	print(type(barcode_data))
-    	pub.publish(barcode_data)
+	print(str(barcode_data))
+	barcode_data_ = str(barcode_data)
+    	pub.publish(barcode_data_)
 	toggle=1
 
     if rem_ != rem:
